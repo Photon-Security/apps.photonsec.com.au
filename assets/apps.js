@@ -11,99 +11,113 @@ const apps = [
       'Move mode deletes originals only after local verification.',
       'Resume, retry, failed-media review, and transfer history.'
     ],
-    action: 'GitHub repo',
+    action: 'Open repository',
     href: 'https://github.com/Photon-Security/iPhone_Media_Transfer'
   },
   {
     slug: 'proxy-ssl-trust',
     name: 'Proxy SSL Trust',
     eyebrow: 'Certificate utility',
-    status: 'Planned',
+    status: 'Public repo',
     accent: '#38d996',
-    summary: 'Make local proxy certificate trust safer and easier to inspect across development machines.',
+    summary: 'Detect proxy settings, extract internal CAs, and configure CLI trust for corporate network tooling.',
     details: [
-      'Central place to audit proxy certificate trust state.',
-      'Designed for development and security testing workflows.',
-      'Planned Windows-first packaging.'
-    ]
+      'Detects proxy configuration and local certificate trust state.',
+      'Extracts internal CAs from macOS Keychain.',
+      'Configures common CLI tools for proxy SSL interception environments.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/proxy-ssl-trust'
   },
   {
     slug: 'video-to-gif',
     name: 'Video to GIF',
     eyebrow: 'Media converter',
-    status: 'Planned',
+    status: 'Public repo',
     accent: '#ffcf5c',
-    summary: 'Fast local conversion from short videos to shareable GIFs with practical size controls.',
+    summary: 'Convert video files to optimized GIFs using FFmpeg with a simple local workflow.',
     details: [
-      'Local conversion workflow for demos and support snippets.',
-      'Target controls for dimensions, frame rate, and file size.',
-      'Batch-friendly roadmap.'
-    ]
+      'Supports common video formats including MP4, AVI, and MOV.',
+      'Built around local FFmpeg conversion.',
+      'Useful for demos, issue reports, and lightweight sharing.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/video-to-gif'
   },
   {
     slug: 'litellm-key-renewer',
     name: 'LiteLLM Key Renewer',
     eyebrow: 'Ops automation',
-    status: 'Planned',
+    status: 'Public repo',
     accent: '#9d7cff',
-    summary: 'Renew and rotate LiteLLM keys with less manual console work.',
+    summary: 'Validate, renew, and manage LiteLLM API keys with less manual console work.',
     details: [
-      'Designed for teams using LiteLLM gateways.',
-      'Tracks renewal state and reduces repetitive admin steps.',
-      'CLI first, GUI later if useful.'
-    ]
+      'Designed for LiteLLM gateway users.',
+      'Automates key validation and renewal flow.',
+      'Integrates with macOS Keychain for local key storage.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/litellm-key-updater'
   },
   {
     slug: 'portkey-key-renewer',
     name: 'Portkey Key Renewer',
     eyebrow: 'Ops automation',
-    status: 'Planned',
+    status: 'Public repo',
     accent: '#ff7aa2',
-    summary: 'Streamline renewal and rotation workflows for Portkey-managed keys.',
+    summary: 'Update and renew Portkey API keys with a repeatable local workflow.',
     details: [
       'Operational helper for routine key hygiene.',
       'Keeps renewal steps consistent across environments.',
       'Built for auditability.'
-    ]
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/portkey-api-renewal'
   },
   {
     slug: 'local-llm-stack',
     name: 'Local LLM Stack',
     eyebrow: 'AI workstation',
-    status: 'Planned',
+    status: 'Private repo',
     accent: '#4dd4ac',
-    summary: 'A reproducible local LLM stack for running models, tools, and gateways on a workstation.',
+    summary: 'A local LLM environment using OpenWebUI, OpenCode, GitHub Copilot, Portkey, LiteLLM, Ollama, and Docker Model Registry.',
     details: [
       'Opinionated local setup for common LLM components.',
-      'Targets repeatable installs over one-off scripts.',
-      'Designed for experimentation without cloud lock-in.'
-    ]
+      'Routes requests through local and cloud model tooling.',
+      'Private while the stack is still being cleaned up.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/local-llm-stack'
   },
   {
     slug: 'identityiq-comparator',
     name: 'IdentityIQ Comparator',
     eyebrow: 'IAM review',
-    status: 'Planned',
+    status: 'Private repo',
     accent: '#5aa9ff',
-    summary: 'Compare IdentityIQ exports and highlight meaningful configuration differences.',
+    summary: 'Extract and compare SailPoint IdentityIQ user roles against other users or baselines without API access.',
     details: [
       'Diff-oriented workflow for SailPoint IdentityIQ data.',
-      'Aims to make noisy XML/config exports reviewable.',
-      'Useful for change review and migration checks.'
-    ]
+      'Designed for role review and migration checks.',
+      'Private while the tool is still being productized.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/identityIQ-role-comparator'
   },
   {
     slug: 'gguf-model-downloader',
     name: 'GGUF Model Downloader',
     eyebrow: 'Model utility',
-    status: 'Planned',
+    status: 'Public repo',
     accent: '#f97316',
-    summary: 'Find, download, and organize GGUF model files for local inference.',
+    summary: 'Download GGUF models from Docker Model Runner for local inference workflows.',
     details: [
       'Model download helper for local LLM users.',
-      'Designed to reduce broken links and manual file sorting.',
-      'Future roadmap includes checksums and metadata.'
-    ]
+      'Targets Docker Model Runner workflows.',
+      'Public repository for the downloader utility.'
+    ],
+    action: 'Open repository',
+    href: 'https://github.com/Photon-Security/Docker_Model_Downloader'
   }
 ];
 
